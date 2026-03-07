@@ -10,34 +10,44 @@ body {
   color: #333;
 }
 
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
 /* HERO SECTION */
 
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
+  justify-content: space-between;
+  padding: 80px 40px;
   max-width: 1100px;
   margin: auto;
 }
 
 .hero-text {
-  margin-left: 40px;
+  max-width: 500px;
 }
 
 .hero-text h1 {
-  font-size: 52px;
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
 .hero-text p {
-  max-width: 420px;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .hero img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -49,24 +59,21 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding: 100px 60px;
+  padding: 100px 40px;
   max-width: 1100px;
   margin: auto;
 }
 
-/* Make arm image bigger */
 .section img {
-  width: 460px;
+  width: 500px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Text block */
+/* TEXT BLOCK */
 
 .section-text {
   max-width: 450px;
-  text-align: left;
-  margin-left: 40px;
 }
 
 .section-text h2 {
@@ -75,9 +82,9 @@ body {
 }
 
 .section-text p {
-  margin-bottom: 25px;
   font-size: 17px;
   line-height: 1.5;
+  margin-bottom: 25px;
 }
 
 /* BUTTON */
@@ -98,7 +105,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* RC CAR SECTION (image on right) */
+/* RC CAR IMAGE ON RIGHT */
 
 .reverse {
   flex-direction: row-reverse;
@@ -112,14 +119,14 @@ footer {
   font-size: 14px;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 900px) {
 
-  .hero, .section {
+  .hero,
+  .section {
     flex-direction: column;
     text-align: center;
-    padding: 60px 40px;
   }
 
   .section img {
