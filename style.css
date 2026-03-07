@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 100px;
+  padding: 80px 120px;
 }
 
 .hero-text {
@@ -25,7 +25,7 @@
 }
 
 .section img {
-  width: 700px;
+  width: 500px;
   border-radius: 12px;
 }
 
