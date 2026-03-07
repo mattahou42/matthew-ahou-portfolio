@@ -10,68 +10,73 @@ body {
   color: #333;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-}
+/* HERO SECTION */
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px;
-  background: transparent;
+  padding: 80px 120px;
+}
+
+.hero-text {
+  margin-left: 40px;
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-bottom: 15px;
 }
 
 .hero-text p {
-  max-width: 400px;
-  font-size: 16px;
+  max-width: 420px;
+  font-size: 18px;
 }
 
 .hero img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* PROJECT SECTIONS */
 
 .section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px;
-  background: linear-gradient(to bottom, rgba(231,183,165,0.4), rgba(255,255,255,0));
+  padding: 100px 120px;
+  gap: 80px;
 }
 
+/* Make arm image bigger */
 .section img {
-  width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 460px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+/* Text block */
 
 .section-text {
-  max-width: 400px;
-  text-align: center;
-}
-
-.left-text {
+  max-width: 450px;
   text-align: left;
+  margin-left: 40px;
 }
 
 .section-text h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 15px;
 }
 
 .section-text p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 1.5;
 }
+
+/* BUTTON */
 
 .btn {
   padding: 12px 25px;
@@ -89,24 +94,32 @@ header {
   transform: translateY(-2px);
 }
 
+/* RC CAR SECTION (image on right) */
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 40px;
   font-size: 14px;
 }
 
+/* MOBILE */
+
 @media (max-width: 900px) {
+
   .hero, .section {
     flex-direction: column;
     text-align: center;
+    padding: 60px 40px;
   }
 
   .section img {
-    margin-bottom: 20px;
+    width: 90%;
   }
 
-  .left-text {
-    text-align: center; /* optional for small screens */
-  }
 }
-
