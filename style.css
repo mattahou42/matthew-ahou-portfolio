@@ -10,97 +10,59 @@ body {
   color: #333;
 }
 
-/* HEADER */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-nav a:hover {
-  opacity: 0.6;
-}
-
-
-/* HERO */
+/* HERO SECTION */
 
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 40px;
+  align-items: center;
+  padding: 80px 120px;
 }
 
 .hero-text {
-  max-width: 500px;
+  margin-left: 40px;
 }
 
 .hero-text h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 52px;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
+  max-width: 420px;
   font-size: 18px;
-  line-height: 1.6;
 }
 
 .hero img {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 
 /* PROJECT SECTIONS */
 
 .section {
   display: flex;
   align-items: center;
-  gap: 60px;
-
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 60px;
-
-  background: white;
-  border-radius: 14px;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+  padding: 100px 120px;
+  gap: 80px;
 }
 
-.section:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
+/* Make arm image bigger */
 .section img {
-  width: 480px;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 460px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-
-/* TEXT */
+/* Text block */
 
 .section-text {
   max-width: 450px;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .section-text h2 {
@@ -109,11 +71,10 @@ nav a:hover {
 }
 
 .section-text p {
-  font-size: 17px;
-  line-height: 1.6;
   margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 1.5;
 }
-
 
 /* BUTTON */
 
@@ -121,45 +82,44 @@ nav a:hover {
   padding: 12px 25px;
   background: #222;
   color: white;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
-  transition: 0.25s;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .btn:hover {
   background: #444;
+  transform: translateY(-2px);
 }
 
-
-/* REVERSE LAYOUT */
+/* RC CAR SECTION (image on right) */
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-
 /* FOOTER */
 
 footer {
   text-align: center;
-  padding: 50px;
+  padding: 40px;
   font-size: 14px;
-  color: #666;
 }
-
 
 /* MOBILE */
 
 @media (max-width: 900px) {
 
-  .hero,
-  .section {
+  .hero, .section {
     flex-direction: column;
     text-align: center;
+    padding: 60px 40px;
   }
 
   .section img {
-    width: 100%;
+    width: 90%;
   }
 
 }
