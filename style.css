@@ -48,8 +48,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 120px;
-  gap: 80px;
+  gap: 60px;
+  padding: 100px 60px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* Make arm image bigger */
